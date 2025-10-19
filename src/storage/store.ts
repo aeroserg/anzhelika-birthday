@@ -292,7 +292,7 @@ export const store: Record<string, any> = {
         },
         image: `qr.png`,
         link: {
-          href: "https://aeroserg.github.io/anzhelika-birthday/dubai_tickets.pdf",
+          href: "https://aeroserg.github.io/anzhelika-birthday/random/1.jpg",
           text: "Открывай!!!",
         },
       },
