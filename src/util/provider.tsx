@@ -110,7 +110,7 @@ export default function TimeProvider({
             <div style={{ marginTop: "1rem" }}>
               <p style={{ marginBottom: "1rem" }}>Подсказка:</p>
               <FaPlane size={40} /> {/*<FaGlobeEurope size={40} />{" "} */}
-             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 -10 260 260" height="45" width="50" xmlns="http://www.w3.org/2000/svg">
+             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 -10 260 260" height="45" width="50" xmlns="http://www.w3.org/2000/svg">
                 <metadata>
                   {" "}
                   Россия и Ближний Восток

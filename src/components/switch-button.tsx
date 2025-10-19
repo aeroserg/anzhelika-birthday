@@ -2,8 +2,8 @@
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
 
 interface SwitchButtonProps {
-    type: 'left' | 'right';
-    onClick: () => void;
+    type: 'left' | 'right' | 'muted';
+    onClick?: () => void;
 }
 
 export default function SwitchButton(props: SwitchButtonProps) {
@@ -15,6 +15,10 @@ export default function SwitchButton(props: SwitchButtonProps) {
         case 'right':
             return (
                 <button className={`switch-button_${props.type}`} onClick={props.onClick}> {<FaArrowRight size={30} style={{opacity:0.6}} />}</button>
+            )
+        case 'muted':
+            return (
+                <button className={`switch-button_left`}> {<FaArrowLeft size={30} style={{opacity:0.1}} />}</button>
             )
         default:
             return (

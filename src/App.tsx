@@ -122,8 +122,10 @@ function App() {
       </div>
 
       <div className="button-container">
-        <SwitchButton type="left" onClick={onLeft} />
-        <SwitchButton type="right" onClick={onRight} />
+        {current > 0 ? (
+          <SwitchButton type="left" onClick={onLeft} />
+        ) : <SwitchButton type="muted" />}
+        {current !== cards.length - 1 && <SwitchButton type="right" onClick={onRight} />}
       </div>
     </>
   );
